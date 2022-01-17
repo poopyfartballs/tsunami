@@ -17,6 +17,7 @@ local UICorner_5 = Instance.new("UICorner")
 local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
+game:GetService('StarterGui'):SetCore('SendNotification', {Title = 'by cim#1111 lol', Text = 'donate 2 me thru cashapp plz'})
 
 ScreenGui.Parent = game.CoreGui
 
