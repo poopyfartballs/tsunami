@@ -1,0 +1,136 @@
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local researchtp = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local endtp = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local fly = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local name = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Open = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(50, 50, 59)
+Main.Position = UDim2.new(0.637084007, 0, 0.561382532, 0)
+Main.Size = UDim2.new(0, 385, 0, 286)
+Main.Visible = true	
+Main.Active = true
+Main.Draggable = true
+
+researchtp.Name = "researchtp"
+researchtp.Parent = Main
+researchtp.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+researchtp.BorderColor3 = Color3.fromRGB(60, 60, 60)
+researchtp.Position = UDim2.new(0.0857142806, 0, 0.353146851, 0)
+researchtp.Size = UDim2.new(0, 135, 0, 48)
+researchtp.Font = Enum.Font.SourceSans
+researchtp.Text = "tp 2 research"
+researchtp.TextColor3 = Color3.fromRGB(0, 0, 0)
+researchtp.TextSize = 33.000
+researchtp.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(134, 283, -1071)
+end)
+
+UICorner.CornerRadius = UDim.new(0.174999997, 0)
+UICorner.Parent = researchtp
+
+endtp.Name = "endtp"
+endtp.Parent = Main
+endtp.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+endtp.BorderSizePixel = 0
+endtp.Position = UDim2.new(0.563636303, 0, 0.353146851, 0)
+endtp.Size = UDim2.new(0, 135, 0, 48)
+endtp.Font = Enum.Font.SourceSans
+endtp.Text = "tp 2 end"
+endtp.TextColor3 = Color3.fromRGB(0, 0, 0)
+endtp.TextSize = 33.000
+endtp.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-14, 235, -1028)
+end)
+
+UICorner_2.CornerRadius = UDim.new(0.174999997, 0)
+UICorner_2.Parent = endtp
+
+fly.Name = "fly"
+fly.Parent = Main
+fly.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+fly.BorderSizePixel = 0
+fly.Position = UDim2.new(0.324675262, 0, 0.615384579, 0)
+fly.Size = UDim2.new(0, 135, 0, 48)
+fly.Font = Enum.Font.SourceSans
+fly.Text = "fly lol (E)"
+fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+fly.TextSize = 33.000
+fly.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/68WS5k7e', true))()
+end)
+
+UICorner_3.CornerRadius = UDim.new(0.174999997, 0)
+UICorner_3.Parent = fly
+
+name.Name = "name"
+name.Parent = Main
+name.BackgroundColor3 = Color3.fromRGB(50, 50, 59)
+name.BorderSizePixel = 0
+name.Position = UDim2.new(0.0753246769, 0, 0.0349650346, 0)
+name.Size = UDim2.new(0, 326, 0, 39)
+name.Font = Enum.Font.SourceSans
+name.Text = "Tsunami game v69 by cim and delux"
+name.TextColor3 = Color3.fromRGB(0, 0, 0)
+name.TextSize = 27.000
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 59)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.859740257, 0, 0.853146851, 0)
+TextButton.Size = UDim2.new(0, 42, 0, 33)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "_"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 28.000
+TextButton.MouseButton1Down:connect(function()
+	Main.Visible = false
+end)
+
+UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_4.Parent = Main
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(50, 50, 59)
+Open.Position = UDim2.new(0.925515056, 0, 0.214541107, 0)
+Open.Size = UDim2.new(0, 48, 0, 37)
+Open.Active = true
+Open.Visible = true
+
+TextButton_2.Parent = Open
+TextButton_2.BackgroundColor3 = Color3.fromRGB(50, 50, 59)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(-0.0208333284, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0, 49, 0, 37)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Open"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Down:connect(function()
+	Main.Visible = true
+end)
+
+
+UICorner_5.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_5.Parent = TextButton_2
+
+UICorner_6.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_6.Parent = Open
