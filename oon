@@ -42,7 +42,20 @@ end)
 Button1:AddToolTip("Hold ctrl")
 -------------
 local Button6 = Section2:CreateButton("noclip", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/K0Giizx7', true))()
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+if key == "f" then
+noclip = not noclip
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
 game:GetService('StarterGui'):SetCore('SendNotification', {Title = 'by cim#1111 lol', Text = 'loaded!'})
 end)
 Button1:AddToolTip("Press F")
