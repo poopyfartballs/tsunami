@@ -62,7 +62,7 @@ end)
 game:GetService('StarterGui'):SetCore('SendNotification', {Title = 'by cim#1111 lol', Text = 'loaded!'})
 end)
 -------------
-local Button9 = Section2:CreateButton("stop time", function()
+local Button9 = Section2:CreateButton("stop time (f)", function()
 setting = settings().Network
 local Effect = Instance.new("ColorCorrectionEffect")
 Effect.Parent = game.Lighting
