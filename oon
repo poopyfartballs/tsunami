@@ -92,3 +92,9 @@ game:GetService('StarterGui'):SetCore('SendNotification', {Title = 'by cim#1111 
 end)
 Button1:AddToolTip("F")
 -------------
+local Button10 = Section2:CreateButton("Grab Tool (q and e)", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/gx29qS8Z'))()
+game:GetService('StarterGui'):SetCore('SendNotification', {Title = 'by cim#1111 lol', Text = 'loaded!'})
+end)
+Button1:AddToolTip("R")
+-------------
