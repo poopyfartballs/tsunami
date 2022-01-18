@@ -1,7 +1,7 @@
 local Config = {
 WindowName = "made by cim#1111",
 Color = Color3.fromRGB(255,128,0),
-Keybind = Enum.KeyCode.P
+Keybind = Enum.KeyCode.LeftControl
 }
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BracketV3.lua"))()
