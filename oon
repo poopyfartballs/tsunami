@@ -14,17 +14,17 @@ local Section2 = Tab1:CreateSection("Other")
 
 Section1:CreateLabel("TPs")
 -------------
-local Button1 = Section1:CreateButton("TP to end", function()
+local Button1 = Section1:CreateButton("End", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-14, 235, -1028)
 end)
 Button1:AddToolTip("Tps you to the end")
 -------------
-local Button2 = Section1:CreateButton("TP to research", function()
+local Button2 = Section1:CreateButton("Research", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(134, 283, -1071)
 end)
 Button1:AddToolTip("TPs you inside research place")
 -------------
-local Button4 = Section1:CreateButton("TP to the outside", function()
+local Button4 = Section1:CreateButton("Outside", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6, 231, 1136)
 end)
 Button1:AddToolTip("TPs you outside")
@@ -91,10 +91,4 @@ game:GetService("UserInputService").InputBegan:connect(onKeyPress)
 game:GetService('StarterGui'):SetCore('SendNotification', {Title = 'by cim#1111 lol', Text = 'loaded!'})
 end)
 Button1:AddToolTip("F")
--------------
-local Button10 = Section2:CreateButton("Grab Tool (q and e)", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/gx29qS8Z'))()
-game:GetService('StarterGui'):SetCore('SendNotification', {Title = 'by cim#1111 lol', Text = 'loaded!'})
-end)
-Button1:AddToolTip("R")
 -------------
